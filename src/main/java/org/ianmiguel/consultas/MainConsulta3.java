@@ -17,6 +17,5 @@ public class MainConsulta3 {
         Coche co = (Coche) q.uniqueResult();
         System.out.println("El coche de " + fechaCoche + " años es " + co);
 
-        //t.commit();
     }
 }
