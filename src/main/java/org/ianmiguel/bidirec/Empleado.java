@@ -30,6 +30,10 @@ public class Empleado implements Serializable {
         return id;
     }
 
+    /*public void setId(int id) {
+        this.id = id;
+    }*/
+
     public String getNom() {
         return nom;
     }
@@ -60,6 +64,7 @@ public class Empleado implements Serializable {
                 "id=" + id +
                 ", nom='" + nom + '\'' +
                 ", salario=" + salario +
+                ", usuario=" + usuario +
                 '}';
     }
 }

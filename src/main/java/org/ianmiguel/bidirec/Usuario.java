@@ -11,7 +11,7 @@ public class Usuario {
     private String nomUsuario;
     @Column
     private String password;
-    @OneToOne(mappedBy = "usuario",cascade = CascadeType.PERSIST)
+    @OneToOne(cascade = CascadeType.PERSIST)
     private Empleado empleado;
 
     public Usuario() {
@@ -32,6 +32,7 @@ public class Usuario {
         this.id = id;
     }*/
 
+
     public String getNomUsuario() {
         return nomUsuario;
     }
@@ -47,7 +48,6 @@ public class Usuario {
     public void setPassword(String password) {
         this.password = password;
     }
-
 
     public Empleado getEmpleado() {
         return empleado;
