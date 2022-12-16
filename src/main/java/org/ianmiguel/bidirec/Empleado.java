@@ -13,12 +13,7 @@ public class Empleado implements Serializable {
     @Column(name="nombre")
     private String nom;
     @Column
-    @OneToOne(mappedBy = "Empleado",cascade = CascadeType.PERSIST)
     private double salario;
-
-    //@ManyToMany(cascade = {CascadeType.ALL})
-    //@JoinColumn(name="FK_Coche",referencedColumnName = "id_coche")
-
     public Empleado() {
     }
 

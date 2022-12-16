@@ -1,8 +1,9 @@
-package org.ianmiguel;
+package org.ianmiguel.appsempleados;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
+import org.ianmiguel.Empleado;
 
 import java.util.List;
 

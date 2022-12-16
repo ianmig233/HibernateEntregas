@@ -2,7 +2,7 @@ package org.ianmiguel.bidirec;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name="usuarios")
+@Table(name="Usuario")
 public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -12,12 +12,12 @@ public class Usuario {
     @Column
     private String password;
     @OneToOne(mappedBy = "usuario",cascade = CascadeType.PERSIST)
-    private EmpleadoHerencia empleado;
+    private Empleado empleado;
 
     public Usuario() {
     }
 
-    public Usuario(String nomUsuario, String password, EmpleadoHerencia empleado) {
+    public Usuario(String nomUsuario, String password, Empleado empleado) {
         this.nomUsuario = nomUsuario;
         this.password = password;
         this.empleado = empleado;
@@ -47,11 +47,12 @@ public class Usuario {
         this.password = password;
     }
 
-    public EmpleadoHerencia getEmpleado() {
+
+    public Empleado getEmpleado() {
         return empleado;
     }
 
-    public void setEmpleado(EmpleadoHerencia empleado) {
+    public void setEmpleado(Empleado empleado) {
         this.empleado = empleado;
     }
 

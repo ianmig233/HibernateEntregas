@@ -13,17 +13,19 @@
 
         <!-- DB schema will be updated if needed -->
         <property name="hibernate.hbm2ddl.auto">update</property>
-        <mapping class="org.ianmiguel.onetomany.Coche"/>
-        <mapping class="org.ianmiguel.onetomany.Concesionario"/>
+        <mapping class="org.ianmiguel.Empleado"/>
+        <mapping class="org.ianmiguel.Coche"/>
+        <mapping class="org.ianmiguel.Cliente"/>
         <mapping class="org.ianmiguel.unidirec.ClienteUni"/>
         <mapping class="org.ianmiguel.unidirec.Cuenta"/>
-        <mapping class="org.ianmiguel.Cliente"/>
-        <mapping class="org.ianmiguel.Empleado"/>
-        <mapping class="org.ianmiguel.bidirec.EmpleadoHerencia"/>
+        <mapping class="org.ianmiguel.onetomany.Coche"/>
+        <mapping class="org.ianmiguel.onetomany.Concesionario"/>
         <mapping class="org.ianmiguel.manytomany.ConcesionarioMany"/>
-        <mapping class="org.ianmiguel.bidirec.Usuario"/>
-        <mapping class="org.ianmiguel.appsempleados.EmpleadoSingle"/>
+        <mapping class="org.ianmiguel.manytomany.Socio"/>
         <mapping class="org.ianmiguel.herencia.Cantante"/>
         <mapping class="org.ianmiguel.herencia.CantanteIndependiente"/>
+        <mapping class="org.ianmiguel.bidirec.Empleado"/>
+        <mapping class="org.ianmiguel.bidirec.Usuario"/>
+        <mapping class="org.ianmiguel.appsempleados.EmpleadoSingle"/>
     </session-factory>
 </hibernate-configuration>

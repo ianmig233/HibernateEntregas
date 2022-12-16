@@ -18,7 +18,7 @@ public class AppBidirec {
         ss.persist(e);*/
 
         // En este caso al guardar el usuario TAMBIÉN se guarda el empleado
-        EmpleadoHerencia e1 = new EmpleadoHerencia("Pedro",null);
+        Empleado e1 = new Empleado("Pedro",2000);
         Usuario u1 = new Usuario ("PedroMiguel","123456",e1);
         ss.persist(u1);
         t.commit();
