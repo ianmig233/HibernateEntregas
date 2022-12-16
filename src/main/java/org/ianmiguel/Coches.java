@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name="Coches")
-public class Coche implements Serializable {
+public class Coches implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int id_coche;
@@ -17,10 +17,10 @@ public class Coche implements Serializable {
     private int fecha;
 
 
-    public Coche(){
+    public Coches(){
     }
 
-    public Coche(int id_coche, String nombre, String matricula, int fecha){
+    public Coches(int id_coche, String nombre, String matricula, int fecha){
         this.id_coche=id_coche;
         this.nombre=nombre;
         this.matricula=matricula;

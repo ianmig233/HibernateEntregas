@@ -14,7 +14,7 @@ public class ClienteUni implements Serializable {
     @Column
     private String nombre;
 
-    @OneToOne(cascade = CascadeType.PERSIST, mappedBy = "ClienteUni")
+    @OneToOne(cascade = CascadeType.PERSIST, mappedBy = "cliente")
     private Cuenta cuenta;
 
     public ClienteUni(){

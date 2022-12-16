@@ -13,8 +13,8 @@
 
         <!-- DB schema will be updated if needed -->
         <property name="hibernate.hbm2ddl.auto">update</property>
-        <mapping class="org.ianmiguel.Empleado"/>
-        <mapping class="org.ianmiguel.Coche"/>
+        <mapping class="org.ianmiguel.Empleados"/>
+        <mapping class="org.ianmiguel.Coches"/>
         <mapping class="org.ianmiguel.Cliente"/>
         <mapping class="org.ianmiguel.unidirec.ClienteUni"/>
         <mapping class="org.ianmiguel.unidirec.Cuenta"/>

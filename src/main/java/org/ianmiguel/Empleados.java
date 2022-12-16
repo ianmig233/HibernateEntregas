@@ -6,7 +6,7 @@ import java.io.Serializable;
 
 @Entity
 @Table(name="Empleados")
-public class Empleado implements Serializable {
+public class Empleados implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int id;
@@ -17,10 +17,10 @@ public class Empleado implements Serializable {
     @Transient
     private String comentario;
 
-    public Empleado() {
+    public Empleados() {
     }
 
-    public Empleado(String nom, double salario) {
+    public Empleados(String nom, double salario) {
         this.nom = nom;
         this.salario = salario;
     }

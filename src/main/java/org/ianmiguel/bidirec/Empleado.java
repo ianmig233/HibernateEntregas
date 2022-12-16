@@ -14,12 +14,16 @@ public class Empleado implements Serializable {
     private String nom;
     @Column
     private double salario;
+
+    @OneToOne(mappedBy = "empleado",cascade = CascadeType.PERSIST)
+    private Usuario usuario;
     public Empleado() {
     }
 
-    public Empleado(String nom, double salario) {
+    public Empleado(String nom, double salario,Usuario usuario) {
         this.nom = nom;
         this.salario = salario;
+        this.usuario = usuario;
     }
 
     public int getId() {
@@ -40,6 +44,14 @@ public class Empleado implements Serializable {
 
     public void setSalario(double salario) {
         this.salario = salario;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
     }
 
     @Override

@@ -19,7 +19,7 @@ public class Concesionario implements Serializable {
     @Column(name = "direccion")
     private String direccion;
 
-    @OneToMany(mappedBy = "Concesionario",cascade = CascadeType.PERSIST)
+    @OneToMany(mappedBy = "concesionario",cascade = CascadeType.PERSIST)
     private List<Coche> coches;
     public Concesionario(){
     }
